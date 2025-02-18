@@ -8,12 +8,12 @@ $dbname = "your db name";
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// Check connection db
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve the posted username and email
+// Retrieve the posted username and Email
 if (isset($_POST['username']) && isset($_POST['email'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
